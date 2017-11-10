@@ -1,0 +1,2 @@
+class CurrentStat < ApplicationRecord
+end
