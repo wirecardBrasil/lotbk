@@ -1,6 +1,6 @@
 class Stats
 
-  def self.show
-    render plain: "Mostrando o Stats"
+  def show
+    "Mostrando o Stats 2"
   end
 end
