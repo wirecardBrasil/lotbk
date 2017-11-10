@@ -1,2 +1,2 @@
-# lotbk
-The Legend of the Blue Kalango
+# The Legend of the Blue Kalango
+MMORPG
