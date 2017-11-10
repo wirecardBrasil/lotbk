@@ -1,4 +1,4 @@
 class Character < ApplicationRecord
-  belongs_to :inventory
+  has_many :inventory
   has_one :current_stat
 end

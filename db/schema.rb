@@ -15,12 +15,12 @@ ActiveRecord::Schema.define(version: 20171110163756) do
   create_table "characters", force: :cascade do |t|
     t.integer "inventory_id"
     t.string "name"
-    t.integer "experience"
-    t.integer "level"
-    t.integer "health"
-    t.integer "attack_pwr"
-    t.integer "defense_pwr"
-    t.integer "gold"
+    t.integer "experience", default: 0
+    t.integer "level", default: 1
+    t.integer "health", default: 100
+    t.integer "attack_pwr", default: 10
+    t.integer "defense_pwr", default: 10
+    t.integer "gold", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["inventory_id"], name: "index_characters_on_inventory_id"
@@ -55,6 +55,7 @@ ActiveRecord::Schema.define(version: 20171110163756) do
     t.integer "required_level"
     t.integer "durability"
     t.boolean "consumable"
+    t.integer "value"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["inventory_id"], name: "index_items_on_inventory_id"

@@ -11,6 +11,7 @@ class CreateItems < ActiveRecord::Migration[5.1]
       t.integer :required_level
       t.integer :durability
       t.boolean :consumable
+      t.integer :value
 
       t.timestamps
     end

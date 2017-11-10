@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get '/stats', to: 'application#show'
   resources :character, only: [:find, :show, :update, :create]
   resources :score, only: [:index, :show]
+  resources :item
 end
